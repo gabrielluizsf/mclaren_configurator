@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MP4-12C</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script async src="https://unpkg.com/es-module-shims@1.8.0/dist/es-module-shims.js"></script>
+  <script type="importmap">
+    {
+        "imports": {
+            "three": "https://unpkg.com/three@0.156.1/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.156.1/examples/jsm/"
+        }
+    }
+    </script>
+</head>
+
+<body>
+  <div id="quiz-overlay">
+    <div class="quiz-card">
+      <div class="lab-header" style="margin-bottom: 20px; justify-content: center;">
+        <span class="material-symbols-outlined icon-primary">analytics</span>
+        <h2 style="margin: 0">STYLE ANALYZER</h2>
+      </div>
+      <p style="font-size: 0.75rem; color: var(--on-surface-variant); margin-bottom: 24px;">Select the 3 clothing colors you wear most often:</p>
+      <div id="quiz-options" class="palette-grid" style="margin-bottom: 32px;">
+        </div>
+      <button id="start-configurator" disabled>GENERATE CUSTOM CONFIGURATION</button>
+    </div>
+  </div>
+
+  <header>
+    <div class="logo">MP4-12C</div>
+    <nav>
+      <a href="#" class="active">Aerodynamics</a>
+      <a href="#"></a>
+    </nav>
+    <div class="header-icons">
+      <span class="material-symbols-outlined">memory</span>
+      <span class="material-symbols-outlined">speed</span>
+      <span class="material-symbols-outlined">settings</span>
+    </div>
+  </header>
+
+  <aside id="paint-lab">
+    <div class="lab-header">
+      <span class="material-symbols-outlined icon-primary">palette</span>
+      <div>
+        <h2>PAINT LAB</h2>
+        <p>Exterior Finish</p>
+      </div>
+    </div>
+
+    <div class="material-list">
+      <div class="mat-item active"><span class="material-symbols-outlined">palette</span> Solid</div>
+    </div>
+
+    <div class="component-selection">
+      <label>Component Selection</label>
+      <div class="comp-item active">
+        <p>Active: Body Panels (Primary)</p>
+        <span id="active-color-text">Awaiting Style...</span>
+      </div>
+    </div>
+
+    <div class="palette-section">
+      <label>Your Custom Palette</label>
+      <div id="color-palette" class="palette-grid">
+      </div>
+    </div>
+  </aside>
+
+  <main id="car-viewport">
+    <div class="hud-container">
+      <div class="stats-card top-left">
+        <div class="card-header">
+          <h3>M838T PERFORMANCE (v2013)</h3>
+          <span class="material-symbols-outlined">speed</span>
+        </div>
+        <p class="data-disclaimer">* Data may be outdated.</p>
+        <div class="stat-row">
+          <span class="stat-label">POWER OUTPUT</span>
+          <span class="stat-value">625<small>HP</small></span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-label">0-100 KM/H</span>
+          <span class="stat-value">3.1<small>s</small></span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-label">0-300 KM/H</span>
+          <span class="stat-value">26.5<small>s</small></span>
+        </div>
+        <div class="stat-row">
+          <span class="stat-label">MAX VELOCITY</span>
+          <span class="stat-value">333<small>KM/H</small></span>
+        </div>
+      </div>
+
+      <div class="stats-card top-right">
+        <div class="card-header">
+          <h3>RENDER ENGINE</h3>
+          <div class="toggle-group">
+            <span class="active">GPU</span>
+            <span>CPU</span>
+          </div>
+        </div>
+        <p class="hud-desc">Current Component View:<br>MP4-12C Full Assembly</p>
+      </div>
+    </div>
+
+    <div id="rendering-overlay">
+      <div class="loader"></div>
+      <p id="loading-text">Building Geometry...</p>
+    </div>
+  </main>
+
+  <footer class="bottom-bar">
+    <span>MODE: EXTERIOR CONFIGURATION</span>
+    <span>STATUS: SELECT PAINT FINISH</span>
+    <span style="margin-left:auto;">2026 https://github.com/gabrielluizsf</span>
+  </footer>
+
+  <script src="locale.js"></script>
+  <script type="module" src="script.js"></script>
+</body>
+
+</html>
