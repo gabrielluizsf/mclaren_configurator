@@ -22,12 +22,10 @@ function translateToPortuguese() {
     '#active-color-text': 'Aguardando Estilo...',
     '.palette-section label': 'Sua Paleta Personalizada',
 
-    '.top-left h3': 'PERFORMANCE M838T (v2013)',
-    '.data-disclaimer': '* Os dados podem estar desatualizados.',
-    '.top-left .stat-row:nth-child(2) .stat-label': 'POTÊNCIA',
-    '.top-left .stat-row:nth-child(3) .stat-label': '0-100 KM/H',
-    '.top-left .stat-row:nth-child(4) .stat-label': '0-300 KM/H',
-    '.top-left .stat-row:nth-child(5) .stat-label': 'VELOCIDADE MÁXIMA',
+    '[data-i18n="perf_title"]': 'PERFORMANCE M838T (v2013)',
+    '[data-i18n="disclaimer"]': '* Os dados podem estar desatualizados.',
+    '[data-i18n="power"]': 'POTÊNCIA',
+    '[data-i18n="velocity"]': 'VELOCIDADE MÁXIMA',
 
     '.top-right h3': 'MOTOR DE RENDERIZAÇÃO',
     '.hud-desc': 'Visualização do Componente:<br>Montagem Completa MP4-12C',
@@ -41,7 +39,7 @@ function translateToPortuguese() {
   Object.keys(translations).forEach(selector => {
     const element = document.querySelector(selector);
     if (element) {
-      
+
       if (selector.includes('.mat-item') || selector.includes('.hud-desc')) {
         element.innerHTML = translations[selector];
       } else {
