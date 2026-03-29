@@ -28,8 +28,10 @@ Instead of browsing through static menus, the customer selects the colors they w
 ## 🛠️ Tech Stack & Proof of Concept
 This prototype is a front-end demonstration of how the interface would look and feel:
 * **Three.js:** Used for the 3D environment and real-time material updates.
-* **Vanilla JavaScript & CSS:** Custom logic for color filtering and a glassmorphism-based UI.
-* **Modular Design:** Built to demonstrate how a "Style Quiz" could integrate into existing 3D configurators.
+* **TypeScript:** For robust, type-safe custom logic and DOM manipulation (compiled to JS).
+* **HTML & CSS:** Core structure and glassmorphism-based UI styling.
+* **Node.js (v24.14.1):** Runtime environment for project management and dependencies.
+* **Jest:** Implemented for unit testing and test coverage (`*.test.ts`).
 
 ---
 
