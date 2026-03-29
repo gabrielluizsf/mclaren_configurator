@@ -1,0 +1,36 @@
+{
+  "name": "mclaren_configurator",
+  "version": "1.0.0",
+  "description": "**Important:** This is a **non-commercial, fan-made prototype**. This project is a conceptual study of a new feature and is NOT an official product of McLaren Automotive.",
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielluizsf/mclaren_configurator.git"
+  },
+  "keywords": [],
+  "author": "gabrielluizsf",
+  "license": "MIT",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/gabrielluizsf/mclaren_configurator/issues"
+  },
+  "homepage": "https://github.com/gabrielluizsf/mclaren_configurator#readme",
+  "dependencies": {
+    "three": "^0.183.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/jsdom": "^28.0.1",
+    "@types/three": "^0.183.1",
+    "jest": "^30.3.0",
+    "jest-environment-jsdom": "^30.3.0",
+    "jsdom": "^29.0.1",
+    "ts-jest": "^29.4.6"
+  }
+}
