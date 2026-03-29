@@ -7,6 +7,10 @@ const config: Config = {
   
   clearMocks: true,
   
+  moduleNameMapper: {
+    '^(\\.{1,2}/.*)\\.js$': '$1', 
+  },
+  
   transform: {
     '^.+\\.(ts|tsx)?$': 'ts-jest',
     '^.+\\.(js|jsx)$': 'babel-jest', 
